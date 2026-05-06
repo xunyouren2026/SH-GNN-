@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: sh-gnn
+Version: 1.0.0
+Summary: Spherical Harmonic Graph Neural Network with strict SO(3) equivariance
+Home-page: https://github.com/yourhub/sh-gnn
+Author: Your Name
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch>=2.0.0
+Requires-Dist: torch_geometric>=2.3.0
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: onnx>=1.13.0
+Requires-Dist: onnxruntime>=1.14.0
+Requires-Dist: fastapi>=0.95.0
+Requires-Dist: uvicorn>=0.21.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: tensorboard>=2.11.0
+Requires-Dist: tqdm>=4.64.0
+Provides-Extra: tensorrt
+Requires-Dist: tensorrt>=8.5; extra == "tensorrt"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SH-GNN: Spherical Harmonic Graph Neural Network
+
+**Production‑ready deep learning framework with strict SO(3) equivariance and physical constraints.**
+
+SH-GNN compiles physics directly into the network architecture. It guarantees rotational equivariance without data augmentation, adaptively truncates high frequencies via dynamic sparsity, and enforces physical laws through a novel physics‑informed loss.
+
+[Full documentation to be added]

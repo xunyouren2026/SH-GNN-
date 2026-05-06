@@ -1,0 +1,30 @@
+[
+  {
+    "name": "PointNet",
+    "accuracy": 67.0,
+    "params": 9610,
+    "infer_ms": 0.27
+  },
+  {
+    "name": "DGCNN",
+    "accuracy": 78.0,
+    "params": 14026,
+    "infer_ms": 1.4
+  },
+  {
+    "name": "SH-GNN Tiny",
+    "error": "cross_entropy_loss(): argument 'input' (position 1) must be Tensor, not tuple"
+  },
+  {
+    "name": "SH-GNN Small",
+    "error": "cross_entropy_loss(): argument 'input' (position 1) must be Tensor, not tuple"
+  },
+  {
+    "name": "SH-GNN Medium",
+    "error": "cross_entropy_loss(): argument 'input' (position 1) must be Tensor, not tuple"
+  },
+  {
+    "name": "SH-GNN Large",
+    "error": "cross_entropy_loss(): argument 'input' (position 1) must be Tensor, not tuple"
+  }
+]

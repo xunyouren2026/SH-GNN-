@@ -1,0 +1,14 @@
+torch>=2.0.0
+torch_geometric>=2.3.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+scipy>=1.7.0
+# healpy>=1.16.0 /*因为 healpy 在 Windows 上需要编译环境，十分麻烦，而且 ModelNet40 和 QM9 训练不需要它。我们可以这样做：*/
+onnx>=1.13.0
+onnxruntime>=1.14.0
+fastapi>=0.95.0
+uvicorn>=0.21.0
+pydantic>=2.0.0
+tensorboard>=2.11.0
+tqdm>=4.64.0
+torch_scatter
