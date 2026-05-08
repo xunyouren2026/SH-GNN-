@@ -73,8 +73,12 @@ class SHGNN(nn.Module):
                 global_signal = data.signals.mean(dim=0, keepdim=True)
             else:
                 global_signal = data.signals
-            self.current_L_eff = self.sparse_scheduler.compute_L_eff(
-                global_signal)
+            # If signals are all zeros (no real SH data), fall back to l_max
+            if global_signal.abs().sum() < 1e-10:
+                self.current_L_eff = self.l_max
+            else:
+                self.current_L_eff = self.sparse_scheduler.compute_L_eff(
+                    global_signal)
         else:
             self.current_L_eff = self.l_max
 
